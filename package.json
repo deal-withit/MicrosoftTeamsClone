@@ -4,6 +4,9 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "twilio": "^3.65.0",
     "websocket": "^1.0.34"
   },
   "devDependencies": {},
