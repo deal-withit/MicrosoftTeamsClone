@@ -1,0 +1,133 @@
+.nav_logo{
+    width:170px; 
+    height:80px;    
+}
+
+.navigation{
+    list-style-type: none;
+    margin:0; 
+    padding:0; 
+    margin-top: 0px;
+    overflow:hidden; 
+}
+
+.nav_logo{
+    margin-top: -35px;
+}
+
+.navigation li{
+    float:left;  
+}
+
+.navigation li a {
+    display:block; 
+    color:black; 
+    text-align: center; 
+    padding:14px 16px; 
+    text-decoration: none;
+}
+.hor_band{
+    height: 40px;
+    background-color:rgb(75, 83, 188); 
+    width:100%; 
+    text-align: center;
+    color:white; 
+    margin-top: -30px;
+    font-size: 20px;
+}
+.hor_band h4{
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+
+.main_image{
+   width:636px; 
+   height:485px;
+   overflow: hidden; 
+}
+
+
+.items{
+   height:fit-content; 
+   display:flex; 
+   flex-direction:column;
+   justify-content: center;
+   align-items: left; 
+   border:0px solid black;
+   margin-top: 50px;
+   margin-left:100px; 
+}
+
+.items a{
+    text-decoration: none;
+}
+.items a:hover{
+    text-decoration: none;
+}
+.items h1{
+    color:rgb(75, 83, 183);
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.items h2{
+    color:black; 
+    font-size: 36px;
+    line-height: 0.4;
+}
+
+.home_btn{
+    height:40px; 
+    width:220px; 
+    color:white; 
+    background-color: rgb(75, 83, 188);
+    border:none;
+    padding:5px 10px; 
+    margin:10px; 
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.home_btn1{
+    height:40px; 
+    width:220px; 
+    margin:10px; 
+    padding:5px 10px; 
+    border:2px solid rgb(75, 83, 188);
+    background-color: white;
+    color: rgb(75, 83, 188);
+    font-size: 15px;
+    text-align: center;
+}
+
+.home_btn:hover{
+    background-color: rgb(40, 60, 156);
+    transition:0.5s;
+    color:white; 
+}
+
+.home_btn a :hover{
+    text-decoration: none;
+}
+
+.home_btn1:hover{
+    background-color: #d5dce6;
+    box-shadow:0 0.5em 0.5em -0.4em grey;
+    transition:0.3s; 
+}
+
+.logout_btn{
+    height:30px; 
+    width:100px; 
+    color:red; 
+    background-color:white;
+    margin-top: -35px;
+    border:none;
+    padding:5px 10px; 
+    margin:10px; 
+   
+}

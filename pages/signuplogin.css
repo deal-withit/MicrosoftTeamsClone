@@ -1,0 +1,74 @@
+.main_body{
+    background:rgb(245, 245, 245);
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#header{
+    color:rgb(98, 100,167); 
+    font-family:sans-serif;
+    font-size: 35px;   
+}
+
+#call_div
+{
+  padding: 2rem;
+  background: white;
+  width: 530px;
+  height: fit-content;
+  max-width: 500px;
+  min-width: auto;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+}
+
+.company_icon{
+    margin-top: -45px;
+    height:150px; 
+    width:190px; 
+    float:left; 
+ }
+
+ .input_id{
+    margin-left: 40px;
+    width: 400px; 
+    height: 12%;
+    text-align:left;
+    margin-bottom: 50px;
+    border: 0;
+    outline: 0; 
+    border-bottom: 2px solid grey; 
+    font-size: 15px;
+}
+.input_id:focus{
+    border-bottom: 2px solid blue; 
+}
+.btn{
+    border:none; 
+    margin-top: 10px;
+    /* display: inline-block; */
+    padding: 10px 15px;
+    width: 40%; 
+    margin-bottom: 40px;  
+    color: black;
+    font-size: large;
+    font-weight: normal;
+    opacity: 1; 
+    transition: 0.3s; 
+    background-color: rgb(172, 185, 223); 
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius:  20px; 
+    border-radius: 3px;
+    float:right;  
+  }
+.btn:hover{
+    background-color: rgb(98, 100,167);
+    color:white; 
+}
+  button{
+      cursor:pointer; 
+  }

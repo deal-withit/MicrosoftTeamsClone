@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="welcome.css">
+    <title>Welcome|Microsoft Teams clone</title>
+    
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+   
+    <div class="nav_bar">
+        <ul class="navigation">
+            <li><a href="../index.html"><img class="nav_logo" src="../images/ms_logo.png"></a></li>
+           
+            <li id="username" style="float:right;"><span id="user" class="message"< email-id ></span></li> 
+
+            <li style="float:right;"><button onclick="logout()" class="logout_btn">Log Out</button></li>             
+        </ul>
+    </div>
+
+    <div class="main_body">
+        <p id="header">Microsoft Teams Clone</p>
+        <div id="call_div">
+            <img class ="company_icon"src="C:\letscode\webrtc-videocall-javascript-master\images\logo.png" alt="Microsoft"><br>
+            <br><br><br><br><br><br>
+            <center>
+          <a href="../sender/sender.html" class="btn">Create Meet</a>
+          <a href="../receiver/receiver.html" class="btn">Join Meet</a>
+          <a class="btn">Chat</a>
+        </center>
+        </div>
+     </div> 
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+
+<script src="firebase.js"></script>
+<script src="welcome.js"></script>
+</body>
+</html>
