@@ -1,15 +1,17 @@
 
 const Socket = require("websocket").server
-const http = require("http") 
+const http = require("http")
 
 const server = http.createServer((req, res) => {})
 
-server.listen(process.env.PORT || 3000, () => {
-    console.log("Server running on port ");
-});
+server.listen(3000, () => {
+    console.log("Listening on port 3000...")
+})
 
 const webSocket = new Socket({ httpServer: server })
+
 let users = []
+
 webSocket.on('request', (req) => {
     const connection = req.accept()
 
@@ -84,6 +86,7 @@ webSocket.on('request', (req) => {
                         candidate: candidate
                     }, connection)
                 })
+
                 break
         }
     })
@@ -107,5 +110,4 @@ function findUser(username) {
         if (users[i].username == username)
             return users[i]
     }
-
 }

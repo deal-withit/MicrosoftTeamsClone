@@ -1,4 +1,5 @@
-const webSocket = new WebSocket("ws://localhost:3000")
+
+const webSocket = new WebSocket("ws://192.168.56.1:3000")
 
 webSocket.onmessage = (event) => {
     handleSignallingData(JSON.parse(event.data))
@@ -60,9 +61,9 @@ function joinCall() {
         let configuration = {
             iceServers: [
                 {
-                    "urls": [
-                        "stun: stun.lund1.de:3478"
-                        ]
+                    "urls": ["stun:stun.l.google.com:19302", 
+                    "stun:stun1.l.google.com:19302", 
+                    "stun:stun2.l.google.com:19302"]
                 }
             ]
         }

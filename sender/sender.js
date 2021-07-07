@@ -1,8 +1,8 @@
-const webSocket = new WebSocket("ws://localhost:3000")
+const webSocket = new WebSocket("ws://192.168.56.1:3000")
+
 webSocket.onmessage = (event) => {
     handleSignallingData(JSON.parse(event.data))
 }
-
 
 function handleSignallingData(data) {
     switch (data.type) {
@@ -14,16 +14,14 @@ function handleSignallingData(data) {
     }
 }
 
-
 let username
 function sendUsername() {
-    
+
     username = document.getElementById("username-input").value
     sendData({
         type: "store_user"
     })
 }
-
 
 function sendData(data) {
     data.username = username
@@ -53,10 +51,9 @@ function startCall() {
         let configuration = {
             iceServers: [
                 {
-                    "urls": [
-                        "stun: stun.lund1.de:3478" 
-                        ]
-                        
+                    "urls": ["stun:stun.l.google.com:19302", 
+                    "stun:stun1.l.google.com:19302", 
+                    "stun:stun2.l.google.com:19302"]
                 }
             ]
         }
@@ -84,7 +81,6 @@ function startCall() {
     })
 }
 
-
 function createAndSendOffer() {
     peerConn.createOffer((offer) => {
         sendData({
@@ -98,13 +94,11 @@ function createAndSendOffer() {
     })
 }
 
-
 let isAudio = true
 function muteAudio() {
     isAudio = !isAudio
     localStream.getAudioTracks()[0].enabled = isAudio
 }
-
 
 let isVideo = true
 function muteVideo() {
