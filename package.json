@@ -2,7 +2,7 @@
   "name": "webrtc-videocall-javascript-master",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "login.js",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
