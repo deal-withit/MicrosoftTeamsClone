@@ -1,4 +1,4 @@
-const webSocket = new WebSocket("https://frozen-everglades-42710.herokuapp.com/")
+const webSocket = new WebSocket("wss://frozen-everglades-42710.herokuapp.com/")
 
 webSocket.onmessage = (event) => {
     handleSignallingData(JSON.parse(event.data))
