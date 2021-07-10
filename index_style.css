@@ -26,6 +26,10 @@
     padding:14px 16px; 
     text-decoration: none;
 }
+
+#downloadbtn:hover{
+   text-decoration: underline;
+}
 .hor_band{
     height: 40px;
     background-color:rgb(75, 83, 188); 
@@ -81,7 +85,7 @@
 }
 
 .home_btn{
-    height:40px; 
+    height:38px; 
     width:220px; 
     color:white; 
     background-color: rgb(75, 83, 188);
@@ -89,7 +93,8 @@
     padding:5px 10px; 
     margin:10px; 
     margin-top: 30px;
-    text-align: center;  
+    text-align: center;
+    font-size: 15px;  
 }
 
 .home_btn1{
@@ -106,6 +111,7 @@
 
 .home_btn:hover{
     background-color: rgb(40, 60, 156);
+    box-shadow:0 0.5em 0.5em -0.4em grey;
     transition:0.5s;
     color:white; 
 }
@@ -120,15 +126,26 @@
     transition:0.3s; 
 }
 
+#callreceive_btn a{
+    text-decoration: none;
+}
 #callreceive_btn{
     margin-top: 8px;
     height:40px; 
     width:150px; 
-    background-color:blue;
+    background-color:rgb(75, 83, 188);
     border:none;
+    margin-left: 10px;
+    color:white;
+    margin-right: 10px;
 }
 
 #callreceive_btn:hover{
     opacity:0.3s; 
     color:white; 
+}
+#call{
+    color:white; 
+    font-size: 15px;
+    margin-top: -6px;
 }

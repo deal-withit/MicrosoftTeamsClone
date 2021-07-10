@@ -1,5 +1,4 @@
-const webSocket = new WebSocket("ws://192.168.56.1:3000")
-
+const webSocket = new WebSocket("ws://localhost:3000")
 webSocket.onmessage = (event) => {
     handleSignallingData(JSON.parse(event.data))
 }
@@ -92,7 +91,6 @@ function createAndSendOffer() {
         console.log(error)
     })
 }
-
 
 
 let isAudio = true
