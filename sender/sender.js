@@ -1,5 +1,3 @@
-const { PublishedTrackContext } = require("twilio/lib/rest/video/v1/room/roomParticipant/roomParticipantPublishedTrack")
-
 const webSocket = new WebSocket("ws://192.168.56.1:3000")
 
 webSocket.onmessage = (event) => {
@@ -15,7 +13,6 @@ function handleSignallingData(data) {
             peerConn.addIceCandidate(data.candidate)
     }
 }
-
 let username
 function sendUsername() {
 
@@ -96,10 +93,12 @@ function createAndSendOffer() {
     })
 }
 
+
+
 let isAudio = true
 function muteAudio() {
     isAudio = !isAudio
-    localStream.getAudioTracks()[0].enabled = isAudio 
+    localStream.getAudioTracks()[0].enabled = isAudio
 }
 
 let isVideo = true

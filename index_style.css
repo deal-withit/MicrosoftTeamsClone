@@ -49,7 +49,6 @@
    overflow: hidden; 
 }
 
-
 .items{
    height:fit-content; 
    display:flex; 
@@ -67,6 +66,7 @@
 .items a:hover{
     text-decoration: none;
 }
+
 .items h1{
     color:rgb(75, 83, 183);
     font-size: 40px;
@@ -89,9 +89,9 @@
     padding:5px 10px; 
     margin:10px; 
     margin-top: 30px;
-    text-align: center;
-    
+    text-align: center;  
 }
+
 .home_btn1{
     height:40px; 
     width:220px; 
@@ -120,14 +120,15 @@
     transition:0.3s; 
 }
 
-.logout_btn{
-    height:30px; 
-    width:100px; 
-    color:red; 
-    background-color:white;
-    margin-top: -35px;
+#callreceive_btn{
+    margin-top: 8px;
+    height:40px; 
+    width:150px; 
+    background-color:blue;
     border:none;
-    padding:5px 10px; 
-    margin:10px; 
-   
+}
+
+#callreceive_btn:hover{
+    opacity:0.3s; 
+    color:white; 
 }
