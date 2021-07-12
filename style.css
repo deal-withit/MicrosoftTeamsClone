@@ -62,15 +62,48 @@
 
 }
 
+.btn_action{
+ 
+  border:none;
+  margin-top: 10px;
+  display: inline;
+  padding: 10px 15px;
+  width: 40%;
+  margin-left:15px;
+  float: right;
+  align-items: center;
+  margin-bottom: 25px; 
+  color: black;
+  opacity: 1; 
+  transition: 0.3s; 
+  background-color: rgb(172, 185, 223);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius:  50%; 
+  border-radius: 50%;
+}
+
 
 .btn:hover {
   cursor: pointer;
-  background-color: rgb(60, 60, 218); 
+  background-color: rgb(94, 94, 206); 
   opacity: 3; 
   color:white;
 }
 
 .btn:focus {
+  outline-width: 0;
+}
+
+.btn_action:hover {
+  cursor: pointer;
+  background-color: rgb(75, 83, 188); 
+  opacity: 3; 
+  color:white;
+}
+
+.btn_action:focus {
   outline-width: 0;
 }
 
@@ -84,6 +117,7 @@
   margin-bottom: 25px;
 }
 @media only screen and (max-width: 768px){
+  
   #call_div{
       width: 270px;
       max-width: 500px;
@@ -91,8 +125,8 @@
 
   .input_id{
     margin-left: 15px;
-    width: 220px;
-    max-width: 400px; 
+    width: 180px;
+    max-width: 250px; 
     height: 10%;
     text-align: center;
     margin-bottom: 35px;
@@ -136,14 +170,13 @@
 }
 
 #remote-video {
-    background: #000000;
+    background: grey;
     width: 100%;
     height: 100%;
 }
 
 .call-action-div {
     position: absolute;
-    left: 55%;
     bottom: 32px;
 }
 

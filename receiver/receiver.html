@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
         <link rel="stylesheet" href="../style.css">
-        <title>Recieve Call</title>
+        <title>Join Call</title>
+
     </head>
     <body>
         <div class="main_body">
@@ -27,8 +31,12 @@
             <video id="remote-video" autoplay></video>
         
             <div class="call-action-div">
-                <button onclick="muteVideo()" class="btn">Mute Video</button>
-                <button onclick="muteAudio()" class="btn">Mute Audio</button>
+                <center>
+                  <button  onclick="muteVideo()" id="handlevideo" class="btn_action">
+                      <i class="fa fa-camera fa-2x"></i></button>
+                  <button onclick="muteAudio()"  id="handleaudio" class="btn_action">
+                      <i class="fa fa-microphone fa_custom fa-2x"></i></button>
+                </center>
             </div>
         </div>
     </div>

@@ -98,10 +98,20 @@ let isAudio = true
 function muteAudio() {
     isAudio = !isAudio
     localStream.getAudioTracks()[0].enabled = isAudio
+    if(!isAudio){
+        document.getElementById('handleaudio').innerHTML = "<i class='fa fa-microphone-slash fa_custom fa-2x'>";
+    }else{
+        document.getElementById('handleaudio').innerHTML = "<i class='fa fa-microphone fa_custom fa-2x'> "; 
+    }
 }
 
 let isVideo = true
 function muteVideo() {
     isVideo = !isVideo
     localStream.getVideoTracks()[0].enabled = isVideo
+    if(!isVideo){
+        document.getElementById('handlevideo').innerHTML = "<span style='font-size:26px' class='iconify' data-icon='uil-camera-slash'>"; 
+    }else{
+        document.getElementById('handlevideo').innerHTML = "<i class='fa fa-camera fa-2x'>"; 
+    }
 }

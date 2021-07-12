@@ -1,5 +1,5 @@
 window.onload = function() {
-    // Your web app's Firebase configuration
+    // My web app's Firebase configuration
     var firebaseConfig = {
       apiKey: "AIzaSyB9kYvuyFbzQ_F1_Ed5Bd7kqQa3StSJIGY",
       authDomain: "teamclone-2244e.firebaseapp.com",
