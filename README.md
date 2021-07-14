@@ -6,7 +6,8 @@
 1. Front Page 
 
     ![Microsoft Teams - Google Chrome 14-07-2021 06_13_07 PM](https://user-images.githubusercontent.com/80315547/125624271-b12fba78-9276-46c7-8301-ca608f2fbabd.png)
-2. LogIn Page 
+2. LogIn Page
+   <p>If you forgot your password then You can click on forgot password button, A Password reset link will be sent to Email. You can reset your password from there</p> 
 
      ![Microsoft Teams - Google Chrome 14-07-2021 06_13_36 PM](https://user-images.githubusercontent.com/80315547/125624609-43bc43d6-3752-478b-abbf-09caa7399e57.png)
 3. Create Meet Page
